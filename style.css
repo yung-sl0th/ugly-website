@@ -1,13 +1,8 @@
 body {
-    background-image: url('images/galaxy.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-
+    background-color: #e6e6fa; 
     font-family: 'Comic Sans MS', 'Papyrus', fantasy;
     padding: 50px;
-    color: #fdfdfd;
+    color: #333;
     text-align: right;
 }
 
@@ -21,7 +16,7 @@ h1 {
     word-spacing: 30px;
     text-align: center;
     transform: rotate(-5deg) skewX(10deg);
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.1);
     padding: 20px;
     border: 5px dashed yellow;
     margin-bottom: 40px;
@@ -45,7 +40,7 @@ p.intro {
     font-style: oblique;
     font-weight: bold;
     color: magenta;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: #fff0f5; 
     padding: 20px;
     border: 10px dotted orange;
     box-shadow: 10px 10px 15px black;
@@ -56,20 +51,22 @@ p.intro {
 ul {
     list-style-type: square;
     padding: 20px;
-    margin: 40px;
-    background-color: rgba(255, 255, 255, 0.2);
+    margin: 40px auto;
+    background-color: rgba(255, 255, 255, 0.5);
     border: 5px double green;
     box-shadow: -10px -10px 10px grey;
+    width: fit-content;
+    text-align: center;
 }
 
 li {
-    margin: 20px;
+    margin: 20px auto;
     font-weight: bolder;
     font-size: 22px;
     color: lime;
     font-family: 'Courier New', monospace;
-    transform: rotate(-3deg) skewY(5deg);
     transition: color 0.4s;
+    list-style-position: inside;
 }
 
 li:hover {
@@ -77,10 +74,11 @@ li:hover {
 }
 
 img {
+    display: block;
+    margin: 0 auto 20px auto;
     width: 300px;
     height: auto;
     border: 8px groove hotpink;
-    margin: 15px;
     box-shadow: 10px 10px 20px purple;
     transition: all 0.5s ease-in-out;
     transform: rotate(-2deg);
